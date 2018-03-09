@@ -1,0 +1,12 @@
+_generate_pattern_for_template
+_VARIABLE_RE
+six
+unicode_literals
+validate
+_replace_variable_with_pattern
+_MULTI_SEGMENT_PATTERN
+_SINGLE_SEGMENT_PATTERN
+functools
+expand
+_expand_variable_match
+re

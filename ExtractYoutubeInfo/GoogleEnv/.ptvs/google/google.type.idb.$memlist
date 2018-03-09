@@ -1,0 +1,6 @@
+color_pb2
+money_pb2
+timeofday_pb2
+dayofweek_pb2
+date_pb2
+latlng_pb2

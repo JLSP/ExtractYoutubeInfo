@@ -4,13 +4,14 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>6bc9a9eb-01b1-4b60-ad5c-aaea4d950437</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>ExtractYoutubeInfo.py</StartupFile>
+    <StartupFile>BigQuery.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>ExtractYoutubeInfo</Name>
     <RootNamespace>ExtractYoutubeInfo</RootNamespace>
+    <InterpreterId>MSBuild|GoogleEnv|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +22,27 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AuthClass.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="BigQuery.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="ExtractYoutubeInfo.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="GoogleEnv\">
+      <Id>GoogleEnv</Id>
+      <Version>3.6</Version>
+      <Description>GoogleEnv (Python 3.6 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="client_secret.json" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

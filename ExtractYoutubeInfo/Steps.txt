@@ -1,0 +1,2 @@
+Pasos:
+1. Seguir tutorial https://developers.google.com/youtube/v3/quickstart/python

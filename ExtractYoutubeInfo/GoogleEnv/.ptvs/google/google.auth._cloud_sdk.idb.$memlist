@@ -1,0 +1,15 @@
+_CLOUD_SDK_CONFIG_COMMAND
+load_authorized_user_credentials
+os
+get_project_id
+_CLOUD_SDK_WINDOWS_COMMAND
+json
+google
+_WINDOWS_CONFIG_ROOT_ENV_VAR
+_CONFIG_DIRECTORY
+_CREDENTIALS_FILENAME
+get_config_path
+get_application_default_credentials_path
+environment_vars
+_CLOUD_SDK_POSIX_COMMAND
+subprocess

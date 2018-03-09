@@ -1,0 +1,14 @@
+TimestampFromTicks
+STRING
+Time
+DateFromTicks
+Binary
+NUMBER
+Timestamp
+Date
+datetime
+BINARY
+TimeFromTicks
+DATETIME
+_DBAPITypeObject
+ROWID

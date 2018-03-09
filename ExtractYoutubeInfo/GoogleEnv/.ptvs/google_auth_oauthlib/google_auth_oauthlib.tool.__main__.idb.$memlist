@@ -1,0 +1,7 @@
+os
+click
+APP_NAME
+json
+google_auth_oauthlib
+DEFAULT_CREDENTIALS_FILENAME
+main
