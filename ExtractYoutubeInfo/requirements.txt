@@ -23,7 +23,7 @@ pytz==2017.3
 requests==2.18.4
 requests-oauthlib==0.8.0
 rsa==3.4.2
-setuptools==38.5.2
+setuptools==65.5.1
 six==1.11.0
 uritemplate==3.0.0
 urllib3==1.22
